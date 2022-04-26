@@ -4,3 +4,14 @@
 *.iml
 out
 gen
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+build/Release
+node_modules/
+jspm_packages/
+dist/
+.npm
+.eslintcache
+.yarn-integrity
