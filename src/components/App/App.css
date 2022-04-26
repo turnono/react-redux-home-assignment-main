@@ -99,3 +99,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .ReactVirtualized__Table {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
