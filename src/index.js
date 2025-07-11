@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import SortableComponent from './components/App';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import SortableComponent from "./components/App/App";
+import { Provider } from "react-redux";
+import store from "./store";
+import "./index.css";
 
-ReactDOM.render(
-    <SortableComponent />,
-    document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <Provider store={store}>
+    <SortableComponent />
+  </Provider>
 );
